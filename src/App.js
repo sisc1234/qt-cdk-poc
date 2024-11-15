@@ -6,7 +6,7 @@ function App() {
 
   const fetchMessage = async () => {
     try {
-      const response = await fetch('http://internal-QcatCd-QcatB-dcSHjWVbLQbx-1594602165.ap-south-1.elb.amazonaws.com/hello');
+      const response = await fetch('http://internal-QcatCd-QcatB-dcSHjWVbLQbx-1594602165.ap-south-1.elb.amazonaws.com:8080/hello');
       const data = await response.text();
       setMessage(data);
     } catch (error) {
